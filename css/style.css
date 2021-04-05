@@ -1,0 +1,695 @@
+body {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background: #15243C;
+}
+
+a {
+    color: #2337A4;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #000000;
+    outline: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+@media(min-width: 992px) {
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+
+/**********************************/
+
+
+/******** Back to Top CSS *********/
+
+
+/**********************************/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #2337A4;
+    color: #15243C;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 4px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #ffffff;
+}
+
+
+/**********************************/
+
+
+/********* Form Input CSS *********/
+
+
+/**********************************/
+
+.form-control,
+.custom-select {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #999999;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px
+}
+
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+    border-color: #2337A4;
+}
+
+.custom-radio,
+.custom-checkbox {
+    margin-bottom: 15px;
+}
+
+.custom-radio .custom-control-label::before,
+.custom-checkbox .custom-control-label::before {
+    background: #dddddd;
+    border-color: #dddddd;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    color: #ffffff;
+    background: #2337A4;
+    border-color: #2337A4;
+    box-shadow: none;
+}
+
+.btn {
+    color: #2337A4;
+    background: #ffffff;
+    border: 1px solid #2337A4;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #ffffff;
+    background: #2337A4;
+    box-shadow: none;
+}
+
+
+/*************************************************************************************************************************/
+
+
+/*************************************************************************************************************************/
+
+
+/**********************************/
+
+
+/********** Top Bar CSS ***********/
+
+
+/**********************************/
+
+.top-bar {
+    padding: 3px 0;
+    font-size: 14px;
+    color: #ffffff;
+    background: #8D9BE6;
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
+
+.top-bar .col-sm-6:first-child {
+    text-align: left;
+}
+
+.top-bar .col-sm-6:last-child {
+    text-align: right;
+}
+
+@media (max-width: 575.98px) {
+    .top-bar {
+        border-bottom: 1px solid #181963ce;
+    }
+    .top-bar .col-sm-6:first-child,
+    .top-bar .col-sm-6:last-child {
+        text-align: center;
+    }
+}
+
+
+/**********************************/
+
+
+/*********** Nav Bar CSS **********/
+
+
+/**********************************/
+
+.navbar {
+    background-color: #8D9BE6;
+}
+
+.nav {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .nav .container-fluid {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
+
+.nav .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+.nav .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #2337A4;
+}
+
+.nav .dropdown-menu a.active {
+    color: #ffffff;
+    background: #000000;
+}
+
+@media (min-width: 768px) {
+    .nav,
+    .nav .navbar {
+        background: #15243C !important;
+    }
+    .nav .navbar-brand {
+        display: none;
+    }
+    .nav .navbar-dark a.nav-link {
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .nav .navbar-dark a.nav-link:hover,
+    .nav .navbar-dark a.nav-link.active {
+        color: #2337A4;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 5px 0;
+    }
+    .nav,
+    .nav .navbar {
+        background: #2337A4 !important;
+    }
+    .nav a.nav-link {
+        padding: 5px 0;
+    }
+    .nav .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+
+/**********************************/
+
+
+/********* Bottom Bar CSS *********/
+
+
+/**********************************/
+
+.bottom-bar {
+    padding: 15px 0;
+    background: #8D9BE6;
+    margin-bottom: 30px;
+}
+
+.bottom-bar .logo {
+    text-align: left;
+    overflow: hidden;
+}
+
+.bottom-bar .logo a img {
+    max-height: 60px;
+}
+
+.bottom-bar .search {
+    width: 100%;
+}
+
+.bottom-bar .search input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #15243C;
+    border: 1px solid #2337A4;
+    border-radius: 4px;
+}
+
+.bottom-bar .search button {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 1px;
+    right: 16px;
+    padding: 0 15px;
+    border: none;
+    background: none;
+    color: #2337A4;
+    border-radius: 0 2px 2px 0;
+}
+
+.bottom-bar .search button:hover {
+    background: #2337A4;
+    color: #ffffff;
+}
+
+.bottom-bar .user {
+    font-size: 0;
+    text-align: right;
+}
+
+.bottom-bar .user .wishlist {
+    margin-right: 15px;
+}
+
+.bottom-bar .user .cart i,
+.bottom-bar .user .wishlist i {
+    color: #2337A4;
+}
+
+.bottom-bar .user .cart span,
+.bottom-bar .user .wishlist span {
+    color: #2337A4;
+    font-size: 15px;
+}
+
+.bottom-bar .user .cart:hover i,
+.bottom-bar .user .wishlist:hover i,
+.bottom-bar .user .cart:hover span,
+.bottom-bar .user .wishlist:hover span {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .bottom-bar {
+        max-height: 90px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .bottom-bar .logo,
+    .bottom-bar .search,
+    .bottom-bar .user {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .bottom-bar .user {
+        margin-bottom: 0;
+    }
+}
+
+
+/**********************************/
+
+
+/*********** Header CSS ***********/
+
+
+/**********************************/
+
+.header {
+    position: relative;
+}
+
+.header .col-md-3,
+.header .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.header .navbar {
+    padding: 0;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    background: #15243C !important;
+}
+
+.header .navbar-nav {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header .navbar li {
+    padding: 0 30px;
+    border-bottom: 1px solid #8D9BE6;
+}
+
+.header .navbar li:last-child {
+    border-bottom: none;
+}
+
+.header .navbar a {
+    color: #8D9BE6;
+}
+
+.header .navbar a:hover {
+    color: #2337A4;
+}
+
+.header .navbar i {
+    color: #2337A4;
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.header .navbar a:hover i {
+    color: #ffffff;
+}
+
+.header-slider {
+    position: relative;
+    width: 100%;
+}
+
+.header-slider .header-slider-item {
+    position: relative;
+}
+
+.header-slider .header-slider-caption {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #6164ffb3;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.header-slider .header-slider-caption p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+.header-slider .header-slider-caption .btn {
+    border-color: #ffffff;
+}
+
+.header-slider .header-slider-caption .btn i {
+    margin-right: 5px;
+}
+
+.header .header-img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.header .img-item {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.header .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .img-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #6164ffb3;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.header .img-text:hover {
+    opacity: 1;
+}
+
+.header .img-text p {
+    margin: 0 0 50px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.header .img-text:hover p {
+    margin: 0;
+}
+
+
+/**********************************/
+
+
+/********** Footer CSS ************/
+
+
+/**********************************/
+
+.footer {
+    position: relative;
+    padding: 30px 0 0 0;
+    background: #8D9BE6;
+}
+
+.footer .footer-widget {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer .footer-widget h2 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.footer .footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .footer-widget ul li {
+    margin-bottom: 12px;
+}
+
+.footer .footer-widget ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer .footer-widget ul li a {
+    color: #15243C;
+    white-space: nowrap;
+    display: block;
+    line-height: 23px;
+    transition: all .3s;
+}
+
+.footer .footer-widget ul li a::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.footer .footer-widget ul li a:hover {
+    color: #2337A4;
+}
+
+.footer .footer-widget ul li a:hover::before {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.footer .contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer .contact-info p i {
+    margin-right: 5px;
+}
+
+.footer .social {
+    position: relative;
+    width: 100%;
+}
+
+.footer .social a {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 40px;
+    height: 40px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #15243C;
+    border: 1px solid #15243C;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.footer .social a:hover {
+    color: #2337A4;
+    border-color: #2337A4;
+}
+
+.footer .payment {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #0e15521a;
+}
+
+@media (min-width: 992px) {
+    .footer .payment {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.footer .payment-method,
+.footer .payment-security {
+    overflow: hidden;
+}
+
+.footer .payment-method {
+    text-align: left;
+}
+
+.footer .payment-security {
+    text-align: right;
+}
+
+@media (max-width: 768.98px) {
+    .footer .payment-method {
+        margin-bottom: 15px;
+    }
+    .footer .payment-method,
+    .footer .payment-security {
+        text-align: center;
+    }
+}
+
+.footer .payment-method h2,
+.footer .payment-security h2 {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer .payment-method img,
+.footer .payment-security img {
+    height: 25px;
+}
+
+
+/**********************************/
+
+
+/******** Footer Bottom CSS *******/
+
+
+/**********************************/
+
+.footer-bottom {
+    position: relative;
+    padding: 25px 0;
+    background: #15243C;
+}
+
+.footer-bottom .copyright {
+    text-align: left;
+}
+
+.footer-bottom .template-by {
+    text-align: right;
+}
+
+.footer-bottom .copyright p,
+.footer-bottom .template-by p {
+    color: #030303;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-bottom .copyright p a,
+.footer-bottom .template-by p a {
+    font-weight: 600;
+}
+
+.footer-bottom .copyright p a:hover,
+.footer-bottom .template-by p a:hover {
+    color: #000000;
+}
+
+@media (max-width: 768.98px) {
+    .footer-bottom .copyright,
+    .footer-bottom .template-by {
+        text-align: center;
+    }
+}
