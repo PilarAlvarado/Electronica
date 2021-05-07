@@ -186,7 +186,7 @@
     'use strict';
     window.addEventListener('load', function() {
         // Aqui se dice cuales son las formas a las que se les quiere agregar validacion
-        var forms = document.getElementsByClassName('needs-validation');
+        var forms = document.getElementsByClassName('was-validated');
         // Hace loop y previene envío
         var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {

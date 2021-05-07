@@ -154,24 +154,29 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-form">
-                        <form action="contact.html" class="needs-validation" novalidate>
+                        <form action="contact.html" class="was-validated" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" name="nombre" minlength="3" required placeholder="Nombre" />
                                     <div class="valid-feedback">Nombre válido</div>
-                                    <div class="invalid-feedback">Nombre inválido. Escribe tu nombre (Mínimo 3 caracteres)</div>
+                                    <div class="invalid-feedback">Escribe tu nombre (Mínimo 3 caracteres)</div>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="email" class="form-control" name="email" required placeholder="E-mail" />
                                     <div class="valid-feedback">E-mail válido</div>
-                                    <div class="invalid-feedback">E-mail inválido. Escribe tu e-mail (Uso de @ requerido) </div>
+                                    <div class="invalid-feedback">Escribe tu e-mail (Uso de @ requerido) </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" minlength="5" name="asunto" required placeholder="Asunto" />
+                                <div class="valid-feedback">Asunto válido</div>
+                                <div class="invalid-feedback">Escribe el asunto (Mínimo 5 caracteres) </div>
                             </div>
+
                             <div class="form-group">
                                 <textarea class="form-control" rows="5" minlength="10" name="mensaje" required placeholder="Mensaje"></textarea>
+                                <div class="valid-feedback">Mensaje válido</div>
+                                <div class="invalid-feedback">Escribe tu mensaje (Mínimo 10 caracteres) </div>
                             </div>
                             <div><input class="btn" type="submit"></input>
                             </div>
