@@ -154,22 +154,27 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-form">
-                        <form>
+                        <form action="contact.html" class="needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Nombre" />
+                                    <input type="text" class="form-control" name="nombre" minlength="3" required placeholder="Nombre" />
+                                    <div class="valid-feedback">Nombre válido</div>
+                                    <div class="invalid-feedback">Nombre inválido. Escribe tu nombre (Mínimo 3 caracteres)</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email" />
+                                    <input type="email" class="form-control" name="email" required placeholder="E-mail" />
+                                    <div class="valid-feedback">E-mail válido</div>
+                                    <div class="invalid-feedback">E-mail inválido. Escribe tu e-mail (Uso de @ requerido) </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Asunto" />
+                                <input type="text" class="form-control" minlength="5" name="asunto" required placeholder="Asunto" />
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control" rows="5" minlength="10" name="mensaje" required placeholder="Mensaje"></textarea>
                             </div>
-                            <div><button class="btn" type="submit">Enviar mensaje</button></div>
+                            <div><input class="btn" type="submit"></input>
+                            </div>
                         </form>
                     </div>
                 </div>
