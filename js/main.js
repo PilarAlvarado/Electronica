@@ -200,6 +200,13 @@
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    alert('Completa todos los campos correctamente');
+                }
+                form.classList.add('was-validated');
+            }, false);
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === true) {
+                    alert('Enviado');
                 }
                 form.classList.add('was-validated');
             }, false);
