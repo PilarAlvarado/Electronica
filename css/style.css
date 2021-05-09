@@ -361,6 +361,8 @@ h2 {
     color: #666666;
     border: 1px solid #2337A4;
     border-radius: 4px;
+    display: block;
+    outline: 0;
 }
 
 .bottom-bar .search button {

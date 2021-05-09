@@ -181,28 +181,38 @@
         }
     });
 })(jQuery);
+
+// Form
+
 // Inhabilita envíos de formulario si hay campos inválidos
 (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Aqui se dice cuales son las formas a las que se les quiere agregar validacion
-        var forms = document.getElementsByClassName('needs-validation');
-        // Hace loop y previene envío
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
+    "use strict";
+    window.addEventListener(
+        "load",
+        function() {
+            // Aqui se dice cuales son las formas a las que se les quiere agregar validacion
+            var forms = document.getElementsByClassName("needs-validation");
+            // Hace loop y previene envío
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener(
+                    "submit",
+                    function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add("was-validated");
+                    },
+                    false
+                );
+            });
+        },
+        false
+    );
 })();
 
 var password = document.getElementById("contra"),
     confirm_password = document.getElementById("confcontra");
-
 
 function validatePassword() {
     if (!password.checkValidity()) {
@@ -212,9 +222,8 @@ function validatePassword() {
         if (password.value != confirm_password.value) {
             confirm_password.setCustomValidity("Passwords Don't Match");
         } else {
-            confirm_password.setCustomValidity('');
+            confirm_password.setCustomValidity("");
         }
-
     }
 }
 
